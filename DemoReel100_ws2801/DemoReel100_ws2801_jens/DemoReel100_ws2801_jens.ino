@@ -13,15 +13,15 @@
 #error "Requires FastLED 3.1 or later; check github for latest code."
 #endif
 
-#define DATA_PIN    11
+#define DATA_PIN    2
 #define CLK_PIN   10
 #define LED_TYPE    WS2801
-#define COLOR_ORDER GRB
-#define NUM_LEDS    50
+#define COLOR_ORDER RGB
+#define NUM_LEDS    416
 CRGB leds[NUM_LEDS];
 
-#define BRIGHTNESS          96
-#define FRAMES_PER_SECOND  120
+#define BRIGHTNESS          50
+#define FRAMES_PER_SECOND  30
 
 void setup() {
   delay(3000); // 3 second delay for recovery
